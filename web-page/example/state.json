@@ -1,0 +1,80 @@
+{
+  "state": {
+    "skill_store": {
+      "skills": [
+        {
+          "id": 1,
+          "name": "Javascript",
+          "deescription": "A web progamming language",
+          "image": "js.png",
+          "rate": "80%",
+          "date_learning": "2022-9",
+          "class": "intermediate",
+          "most_used": 1,
+          "status": "most_used",
+          "used_for": ["Web progamming", "Web progamming Frontend", "Backend api", "Fullstack web progamming"]
+        },
+        {
+          "id": 2,
+          "name": "Python",
+          "deescription": "A progamming language",
+          "image": "py.png",
+          "rate": "70%",
+          "date_learning": "2023-06",
+          "class": "beginner",
+          "most_used": 2,
+          "status": "currently learning",
+          "used_for": ["Web progamming", "Web progamming Frontend", "Backend api", "Fullstack web progamming"]
+        },
+        {
+          "id": 3,
+          "name": "PHP",
+          "deescription": "Web progamming language",
+          "image": "php.png",
+          "rate": "75%",
+          "date_learning": "2022-06",
+          "class": "intermediate",
+          "most_used": 3,
+          "status": "migration",
+          "used_for": ["Web progamming", "Web progamming Frontend", "Web progamming backend", "Fullstack web progamming"]
+        },
+        {
+          "id": 4,
+          "name": "Typescript",
+          "deescription": "Superset javascript",
+          "image": "ts.png",
+          "rate": "40%",
+          "date_learning": "2023-10",
+          "class": "beginner",
+          "most_used": 4,
+          "status": "currently learn",
+          "used_for": ["Web progamming", "Web progamming Frontend"]
+        },
+        {
+          "id": 5,
+          "name": "HTML",
+          "deescription": "Markup languange for web dev",
+          "image": "html.png",
+          "rate": "95%",
+          "date_learning": "2022-5",
+          "class": "advance",
+          "most_used": 1,
+          "status": "most used",
+          "used_for": ["Web progamming", "Web progamming Frontend", "Markup language"]
+        },
+        {
+          "id": 6,
+          "name": "HTML",
+          "deescription": "Markup languange for web dev",
+          "image": "html.png",
+          "rate": "95%",
+          "date_learning": "2022-5",
+          "class": "advance",
+          "most_used": 1,
+          "status": "most used",
+          "used_for": ["Web progamming", "Web progamming Frontend", "Markup language"]
+        }
+      ]
+    }
+  }
+}
