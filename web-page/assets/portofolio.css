@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("Glass Effect Login Page - Blue blur.png");
+}
+
 .content-wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #63c3ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +19,31 @@
     color: #070756;
     font-weight: 500;
     letter-spacing: .25px;
+    padding: 10px 140px;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.profile-box {
+    height: auto;
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+}
+.profile-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.image-profile-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
