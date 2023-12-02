@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Glass Effect Login Page - Blue blur.png");
+}
+
+.content-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-family: sans-serif;
+    color: #070756;
+    font-weight: 500;
+    letter-spacing: .25px;
+    padding: 10px 140px;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.profile-box {
+    height: auto;
+    color: white;
+    font-weight: 700;
+}
+
+.profile-box p {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-box p:nth-child(1) {
+    font-size: 60px;
+    letter-spacing: calc(56px/100 * 0.5);
+    margin-bottom: 10px;
+}
+.profile-box p:nth-child(2) {
+    letter-spacing: calc(38px/100 * 0.1);
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.image-profile-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-profile-wrapper img {
+    animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0%, 100% {
+        transform: translateY(-20px) rotate(-0.5deg);
+    }
+    50% {
+        transform: translateY(5px) rotate(1.5deg);
+    }
+}
