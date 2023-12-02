@@ -32,18 +32,42 @@ body {
 .profile-box {
     height: auto;
     color: white;
-    font-size: 42px;
     font-weight: 700;
 }
+
 .profile-box p {
     margin: 0;
     padding: 0;
+}
+
+.profile-box p:nth-child(1) {
+    font-size: 60px;
+    letter-spacing: calc(56px/100 * 0.5);
+    margin-bottom: 10px;
+}
+.profile-box p:nth-child(2) {
+    letter-spacing: calc(38px/100 * 0.1);
+    font-size: 42px;
+    font-weight: 500;
 }
 
 .image-profile-wrapper {
     width: 50%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.image-profile-wrapper img {
+    animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly {
+    0%, 100% {
+        transform: translateY(-20px) rotate(-0.5deg);
+    }
+    50% {
+        transform: translateY(5px) rotate(1.5deg);
+    }
 }

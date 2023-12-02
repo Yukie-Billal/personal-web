@@ -1,17 +1,12 @@
 <script setup lang="ts">
 import '@/assets/portofolio.css'
+import Home from "~/components/portofolio/Home.vue";
+
+const selectedPage: string= "Home"
 </script>
 
 <template>
    <div class="content-wrapper">
-      <div class="profile-wrapper">
-         <div class="profile-box">
-            <p>Yukie Muhammad Billal</p>
-            <p>Fullstack web development</p>
-         </div>
-      </div>
-      <div class="image-profile-wrapper">
-         <img src="#" alt="Ini gambar">
-      </div>
+      <Home v-if="selectedPage == 'Home'" />
    </div>
 </template>

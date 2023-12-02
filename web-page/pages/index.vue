@@ -1,11 +1,9 @@
-<script setup lang="ts">
-const count :number= 1
+<script>
+try {
+   window.location = 'https://portofolio-yukie.yukie-billal.repl.co'
+} catch (e) {}
 </script>
 
 <template>
-<h1>Hello wolrd</h1>
+
 </template>
-
-<style scoped>
-
-</style>
