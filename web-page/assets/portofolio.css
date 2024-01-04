@@ -7,7 +7,8 @@
 }
 
 body {
-    background-image: url("Glass Effect Login Page - Blue blur.png");
+    /*background: linear-gradient(180deg, black, white);*/
+    background-image: url("main-background.png");
 }
 
 .content-wrapper {
@@ -94,11 +95,11 @@ body {
 
 @keyframes fly {
     0%, 100% {
-        box-shadow: 1px 100px 10px -100px rgba(0, 0, 0,.30);
+        box-shadow: 1px 100px 10px -100px rgba(0, 0, 0,.15);
         transform: translateY(-10px) rotate(-0.5deg);
     }
     50% {
-        box-shadow: 15px 60px 10px -60px rgba(0, 0, 0,.30);
+        box-shadow: 15px 60px 10px -60px rgba(0, 0, 0,.15);
         transform: translateY(5px) rotate(.5deg);
     }
 }
