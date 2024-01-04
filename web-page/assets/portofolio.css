@@ -40,22 +40,43 @@ body {
 .profile-box p {
     margin: 0;
     padding: 0;
+    transition: color .2s;
 }
 
 .profile-box p:nth-child(1) {
     font-family: 'Inter', 'Quicksand', sans-serif;
-    font-size: 2.4em;
-    font-weight: 900;
-    letter-spacing: calc(56px/100 * 0.5);
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, .35);
+    font-size: 1.2em;
 }
+
 .profile-box p:nth-child(2) {
     font-family: 'Inter', 'Quicksand', sans-serif;
-    letter-spacing: calc(38px/100 * 0.1);
     font-size: 1.6em;
-    font-weight: 600;
+    font-weight: 900;
+    letter-spacing: calc(56px/100 * 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .35);
+    color: #52ff75;
+    margin-bottom: .3em;
+}
+.profile-box p:nth-child(3) {
+    font-family: 'Inter', 'Quicksand', sans-serif;
+    letter-spacing: calc(38px/100 * 0.1);
+    font-size: .8em;
+    font-weight: 500;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, .25);
+}
+
+.profile-box p:nth-child(1)::selection {
+    color: deepskyblue;
+}
+
+.profile-box p:nth-child(2)::selection {
+    color: #2288fc;
+    text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
+}
+
+.profile-box p:nth-child(3)::selection {
+    color: #6bc9fc;
+    text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
 }
 
 .image-profile-wrapper {
@@ -74,10 +95,16 @@ body {
 @keyframes fly {
     0%, 100% {
         box-shadow: 1px 100px 10px -100px rgba(0, 0, 0,.30);
-        transform: translateY(-20px) rotate(-0.5deg);
+        transform: translateY(-10px) rotate(-0.5deg);
     }
     50% {
         box-shadow: 15px 60px 10px -60px rgba(0, 0, 0,.30);
-        transform: translateY(5px) rotate(1.5deg);
+        transform: translateY(5px) rotate(.5deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .image-profile-wrapper img {
+        animation: none;
     }
 }
