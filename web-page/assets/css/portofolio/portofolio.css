@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    /*background: linear-gradient(180deg, black, white);*/
-    background-image: url("main-background.png");
+    background-image: url("../../main-background.png");
 }
 
 .content-wrapper {
@@ -91,21 +82,4 @@ body {
 .image-profile-wrapper img {
     border-radius: 8px;
     animation: fly 6s ease-in-out infinite;
-}
-
-@keyframes fly {
-    0%, 100% {
-        box-shadow: 1px 100px 10px -100px rgba(0, 0, 0,.15);
-        transform: translateY(-10px) rotate(-0.5deg);
-    }
-    50% {
-        box-shadow: 15px 60px 10px -60px rgba(0, 0, 0,.15);
-        transform: translateY(5px) rotate(.5deg);
-    }
-}
-
-@media (max-width: 1024px) {
-    .image-profile-wrapper img {
-        animation: none;
-    }
 }
