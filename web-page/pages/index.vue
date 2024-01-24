@@ -1,5 +1,7 @@
 <script>
-window.location = '/portofolio'
+try {
+   window.location = '/portofolio'
+} catch (e) {}
 </script>
 
 <template>
