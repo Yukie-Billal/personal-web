@@ -1,0 +1,14 @@
+@media (max-width: 1280px) {
+    .image-profile-wrapper img {
+        animation: none;
+    }
+
+    .content-wrapper {
+        font-size: 32px;
+        padding: 10px 42px;
+    }
+
+    .image-profile-wrapper img {
+        width: 80%;
+    }
+}
