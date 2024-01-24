@@ -8,9 +8,8 @@ useSeoMeta({
    ogImageAlt: 'Yukie muhammad billal',
    twitterCard: 'summary_large_image'
 })
-try {
-   window.location = '/portofolio'
-} catch (e) {}
+
+navigateTo('/portofolio')
 </script>
 
 <template>
