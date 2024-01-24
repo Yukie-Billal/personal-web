@@ -1,4 +1,4 @@
-<script>
+<script setup lang="ts">
 useSeoMeta({
    title: 'My Amazing poersonal website',
    ogTitle: 'Yukie muhammad billal personal website',
@@ -9,7 +9,8 @@ useSeoMeta({
    twitterCard: 'summary_large_image'
 })
 
-navigateTo('/portofolio')
+const router = useRouter()
+router.push('/portofolio')
 </script>
 
 <template>
