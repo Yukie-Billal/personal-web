@@ -1,0 +1,114 @@
+body
+    background-image: url("../../main-background.png")
+
+
+.content-wrapper
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 36px
+    font-family: sans-serif
+    color: #070756
+    font-weight: 500
+    letter-spacing: .25px
+    padding: 10px 140px
+
+
+.profile-wrapper
+    display: flex
+    align-items: center
+    width: 90%
+    height: 100%
+
+
+.profile-box
+    height: auto
+    color: white
+    font-weight: 700
+
+
+.profile-box p
+    margin: 0
+    padding: 0
+    transition: color .2s
+
+
+.profile-box p:nth-child(1)
+    font-family: 'Inter', 'Quicksand', sans-serif
+    font-size: 1.2em
+
+
+.profile-box p:nth-child(2)
+    font-family: 'Inter', 'Quicksand', sans-serif
+    font-size: 1.6em
+    font-weight: 900
+    letter-spacing: calc(56px/100 * 0.5)
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
+    color: #52ff75
+    margin-bottom: .3em
+
+.profile-box p:nth-child(3)
+    font-family: 'Inter', 'Quicksand', sans-serif
+    letter-spacing: calc(38px/100 * 0.1)
+    font-size: .8em
+    font-weight: 500
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .25)
+
+
+.profile-box p:nth-child(1)::selection
+    color: deepskyblue
+
+
+.profile-box p:nth-child(2)::selection
+    color: #2288fc
+    text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+
+
+.profile-box p:nth-child(3)::selection
+    color: #6bc9fc
+    text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+
+
+.image-profile-wrapper
+    width: 50%
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+
+.image-profile-wrapper img
+    border-radius: 8px
+    animation: fly 6s ease-in-out infinite
+
+.navigation-wrapper
+    position: absolute
+    left: 44px
+    padding: 4px
+
+    border-radius: 250px
+    background: white
+    height: auto
+    min-width: 1.4em
+
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
+
+    & .wrapper
+        text-align: center
+        padding: 2px 0
+
+        & .navigation-item
+            list-style: none
+            font-size: 22px
+            padding: 4px 0
+            margin: 6px 0
+            transition: all .2s ease-in-out
+            border-radius: 10px
+
+            &:hover
+                background: #0066ff
+                color: white
+
+
