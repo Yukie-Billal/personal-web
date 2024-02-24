@@ -1,0 +1,6 @@
+// base colors
+$primary: rgb(0, 102, 255)
+$primary-opacity: ()
+
+@for $i from 1 through 9
+    $primary-opacity: append($primary-opacity, rgba($primary, $i * 0.1))

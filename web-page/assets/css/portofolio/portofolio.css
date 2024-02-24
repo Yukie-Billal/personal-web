@@ -2,6 +2,46 @@ body {
   background-image: url("../../main-background.png");
 }
 
+.bg-primary-10 {
+  background-color: rgba(0, 102, 255, 0.1);
+}
+
+.bg-primary-20 {
+  background-color: rgba(0, 102, 255, 0.2);
+}
+
+.bg-primary-30 {
+  background-color: rgba(0, 102, 255, 0.3);
+}
+
+.bg-primary-40 {
+  background-color: rgba(0, 102, 255, 0.4);
+}
+
+.bg-primary-50 {
+  background-color: rgba(0, 102, 255, 0.5);
+}
+
+.bg-primary-60 {
+  background-color: rgba(0, 102, 255, 0.6);
+}
+
+.bg-primary-70 {
+  background-color: rgba(0, 102, 255, 0.7);
+}
+
+.bg-primary-80 {
+  background-color: rgba(0, 102, 255, 0.8);
+}
+
+.bg-primary-90 {
+  background-color: rgba(0, 102, 255, 0.9);
+}
+
+.component {
+  background-color: rgba(0, 102, 255, 0.9);
+}
+
 .content-wrapper {
   width: 100vw;
   height: 100vh;
@@ -10,7 +50,7 @@ body {
   align-items: center;
   font-size: 36px;
   font-family: sans-serif;
-  color: #070756;
+  color: rgb(0, 102, 255);
   font-weight: 500;
   letter-spacing: 0.25px;
   padding: 10px 140px;
@@ -104,11 +144,11 @@ body {
   font-size: 22px;
   padding: 4px 0;
   margin: 6px 0;
-  transition: all 0.2s ease-in-out;
   border-radius: 10px;
 }
 .navigation-wrapper .wrapper .navigation-item:hover {
-  background: #0066ff;
+  background: rgb(0, 102, 255);
+  background: radial-gradient(circle, rgb(0, 102, 255) 40%, rgb(255, 255, 255) 100%);
   color: white;
 }
 
