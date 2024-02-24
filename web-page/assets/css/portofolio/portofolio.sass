@@ -1,7 +1,10 @@
-@use "../sass/colors"
+@use "../_sass/colors"
+@use "../_sass/keyframes"
 
 body
     background-image: url("../../main-background.png")
+    background-repeat: no-repeat
+    background-size: cover
 
 @for $i from 1 through 9
     .bg-primary-#{$i}0
@@ -30,7 +33,6 @@ body
     align-items: center
     width: 90%
     height: 100%
-    background-color: red
 
     @media (max-width: 1500px)
         width: 100%
@@ -81,7 +83,6 @@ body
     display: flex
     justify-content: flex-end
     align-items: center
-    background-color: blue
 
     @media (max-width: 1500px)
         width: 32%

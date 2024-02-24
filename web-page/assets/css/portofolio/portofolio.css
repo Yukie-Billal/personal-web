@@ -1,5 +1,17 @@
+@keyframes fly {
+  0%, 100% {
+    box-shadow: 1px 100px 10px -100px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) rotate(-0.5deg);
+  }
+  50% {
+    box-shadow: 15px 60px 10px -60px rgba(0, 0, 0, 0.15);
+    transform: translateY(5px) rotate(0.5deg);
+  }
+}
 body {
   background-image: url("../../main-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .bg-primary-10 {
@@ -61,7 +73,6 @@ body {
   align-items: center;
   width: 90%;
   height: 100%;
-  background-color: red;
 }
 @media (max-width: 1500px) {
   .profile-wrapper {
@@ -118,7 +129,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-color: blue;
 }
 @media (max-width: 1500px) {
   .image-profile-wrapper {
