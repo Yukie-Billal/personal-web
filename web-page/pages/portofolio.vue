@@ -12,11 +12,8 @@ useSeoMeta({
 import 'assets/css/main.css'
 import 'assets/css/keyframes.css'
 import 'assets/css/portofolio/portofolio.css'
-import 'assets/css/portofolio/portofolio-1024.css'
-import 'assets/css/portofolio/portofolio-1280.css'
-import Home from "~/components/portofolio/Home.vue"
-
-const selectedPage: string= "Home"
+// import 'assets/css/portofolio/portofolio-1024.css'
+// import 'assets/css/portofolio/portofolio-1280.css'
 </script>
 
 <template>
@@ -31,7 +28,7 @@ const selectedPage: string= "Home"
             </li>
          </ul>
       </div>
-      <div class="profile-wrapper" v-if="selectedPage == 'Home'">
+      <div class="profile-wrapper">
          <div class="profile-box">
             <p>Hi, I'am</p>
             <p>Yukie Muhammad Billal</p>
@@ -39,7 +36,7 @@ const selectedPage: string= "Home"
          </div>
       </div>
       <div class="image-profile-wrapper">
-         <img src="/tet-chibi.png" alt="Ini gambar" width="437" />
+         <img src="/tet-chibi.png" alt="Ini gambar" />
       </div>
    </div>
 </template>
