@@ -26,6 +26,10 @@ body {
   background-size: cover;
 }
 
+a {
+  color: white;
+}
+
 .bg-primary-10 {
   background-color: rgba(0, 102, 255, 0.1);
 }
@@ -59,10 +63,6 @@ body {
 }
 
 .bg-primary-90 {
-  background-color: rgba(0, 102, 255, 0.9);
-}
-
-.component {
   background-color: rgba(0, 102, 255, 0.9);
 }
 
@@ -119,7 +119,7 @@ body {
   color: #52ff75;
   margin-bottom: 0.3em;
 }
-.profile-box p:nth-child(2) ::selection {
+.profile-box p:nth-child(2)::selection {
   color: #2288fc;
   text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
 }
@@ -130,9 +130,21 @@ body {
   font-weight: 500;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
-.profile-box p:nth-child(3) ::selection {
+.profile-box p:nth-child(3) *::selection {
   color: #6bc9fc;
   text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
+}
+.profile-box p.social-media-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+.profile-box p.social-media-wrapper .social-icon {
+  transition: al 0.1s ease-in-out;
+  color: white;
+}
+.profile-box p.social-media-wrapper .social-icon:hover {
+  transform: scale(1.12);
 }
 
 .image-profile-wrapper {

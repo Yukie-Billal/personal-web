@@ -3,129 +3,144 @@
 @use "../_sass/_utils/animation"
 
 body
-    background-image: url("../../main-background.png")
-    background-repeat: no-repeat
-    background-size: cover
+  background-image: url("../../main-background.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+a
+  color: white
 
 @for $i from 1 through 9
-    .bg-primary-#{$i}0
-        background-color: nth(colors.$primary-opacity, $i)
-
-.component
-    background-color: nth(colors.$primary-opacity, 9)
-
+  .bg-primary-#{$i}0
+    background-color: nth(colors.$primary-opacity, $i)
 
 .content-wrapper
-    width: 100vw
-    height: 100vh
-    display: flex
-    justify-content: center
-    align-items: center
-    font-size: 36px
-    font-family: sans-serif
-    color: colors.$primary
-    font-weight: 500
-    letter-spacing: .25px
-    padding: 10px 140px
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 36px
+  font-family: sans-serif
+  color: colors.$primary
+  font-weight: 500
+  letter-spacing: .25px
+  padding: 10px 140px
 
 
 .profile-wrapper
-    display: flex
-    align-items: center
-    width: 90%
-    height: 100%
+  display: flex
+  align-items: center
+  width: 90%
+  height: 100%
 
-    @media (max-width: 1500px)
-        width: 100%
+  @media (max-width: 1500px)
+    width: 100%
 
 
 .profile-box
-    height: auto
-    color: white
-    font-weight: 700
-    padding-left: 48px
+  height: auto
+  color: white
+  font-weight: 700
+  padding-left: 48px
 
-    & p
-        margin: 0
-        padding: 0
-        transition: color .2s
+  & p
+    margin: 0
+    padding: 0
+    transition: color .2s
 
-        &:nth-child(1)
-            font-family: 'Inter', 'Quicksand', sans-serif
-            font-size: 1.2em
-            &::selection
-                color: deepskyblue
+    &:nth-child(1)
+      font-family: 'Inter', 'Quicksand', sans-serif
+      font-size: 1.2em
 
-        &:nth-child(2)
-            font-family: 'Inter', 'Quicksand', sans-serif
-            font-size: 1.6em
-            font-weight: 900
-            letter-spacing: calc(56px / 100 * 0.5)
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
-            color: #52ff75
-            margin-bottom: .3em
-            ::selection
-                color: #2288fc
-                text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+      &::selection
+        color: deepskyblue
 
-        &:nth-child(3)
-            font-family: 'Inter', 'Quicksand', sans-serif
-            letter-spacing: calc(38px / 100 * 0.1)
-            font-size: .8em
-            font-weight: 500
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, .25)
-            ::selection
-                color: #6bc9fc
-                text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+    &:nth-child(2)
+      font-family: 'Inter', 'Quicksand', sans-serif
+      font-size: 1.6em
+      font-weight: 900
+      letter-spacing: calc(56px / 100 * 0.5)
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
+      color: #52ff75
+      margin-bottom: .3em
+
+      &::selection
+        color: #2288fc
+        text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+
+
+    &:nth-child(3)
+      font-family: 'Inter', 'Quicksand', sans-serif
+      letter-spacing: calc(38px / 100 * 0.1)
+      font-size: .8em
+      font-weight: 500
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, .25)
+
+      & *::selection
+        color: #6bc9fc
+        text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75)
+
+    &.social-media-wrapper
+      display: flex
+      align-items: center
+      margin-top: 6px
+
+      & .social-icon
+        transition: al .1s ease-in-out
+        color: white
+
+        &:hover
+          transform: scale(1.12)
 
 .image-profile-wrapper
-    width: 50%
-    height: 100%
-    display: flex
-    justify-content: flex-end
-    align-items: center
+  width: 50%
+  height: 100%
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+  @media (max-width: 1500px)
+    width: 32%
+    height: 90%
+
+  @media (max-width: 1366px)
+    display: none
+
+  & img
+    border-radius: 8px
+    animation: fly 6s ease-in-out infinite
 
     @media (max-width: 1500px)
-        width: 32%
-        height: 90%
+      width: 400px
 
-    @media (max-width: 1366px)
-        display: none
-
-    & img
-        border-radius: 8px
-        animation: fly 6s ease-in-out infinite
-
-        @media (max-width: 1500px)
-            width: 400px
-
-        @media (max-width: 1280px)
-            width: 300px
+    @media (max-width: 1280px)
+      width: 300px
 
 .navigation-wrapper
-    position: absolute
-    left: 44px
-    padding: 4px
+  position: absolute
+  left: 44px
+  padding: 4px
 
-    border-radius: 250px
-    background: white
-    height: auto
-    min-width: 1.4em
+  border-radius: 250px
+  background: white
+  height: auto
+  min-width: 1.4em
 
-    box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
+  box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
 
-    & .wrapper
-        text-align: center
-        padding: 2px 0
+  & .wrapper
+    text-align: center
+    padding: 2px 0
 
-        & .navigation-item
-            list-style: none
-            font-size: 22px
-            padding: 4px 0
-            margin: 6px 0
-            border-radius: 10px
+    & .navigation-item
+      list-style: none
+      font-size: 22px
+      padding: 4px 0
+      margin: 6px 0
+      border-radius: 10px
 
-            &:hover
-                background: colors.$primary
-                background: radial-gradient(circle, colors.$primary 40%, rgba(255, 255, 255, 1) 100%)
-                color: white
+      &:hover
+        background: colors.$primary
+        background: radial-gradient(circle, colors.$primary 40%, rgba(255, 255, 255, 1) 100%)
+        color: white

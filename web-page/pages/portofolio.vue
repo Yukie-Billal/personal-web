@@ -10,16 +10,13 @@ useSeoMeta({
 })
 
 import 'assets/css/main.css'
-import 'assets/css/keyframes.css'
 import 'assets/css/portofolio/portofolio.css'
-// import 'assets/css/portofolio/portofolio-1024.css'
-// import 'assets/css/portofolio/portofolio-1280.css'
 
 
-const whosMe = ref<string>('')
-const whosMeIndex = ref<number>(0)
-const isRemoveWhosMe = ref<boolean>(false)
-const whosMeList: string[] = [
+const whoMe = ref<string>('')
+const whoMeIndex = ref<number>(0)
+const isRemoveWhoMe = ref<boolean>(false)
+const whoMeList: string[] = [
     "Junior web developer",
     "Junior api developer",
     "Backend developer",
@@ -27,46 +24,46 @@ const whosMeList: string[] = [
     "Fullstack developer",
 ]
 
-const setWhosMe = () => {
-   const selectedWhosMe: string = whosMeList[whosMeIndex.value]
-   let selectedWhosMeIndex: number = 0
+const setWhoMe = () => {
+   const selectedWhoMe: string = whoMeList[whoMeIndex.value]
+   let selectedWhoMeIndex: number = 0
 
-   if (whosMeList.includes(whosMe.value)) isRemoveWhosMe.value = true
+   if (whoMeList.includes(whoMe.value)) isRemoveWhoMe.value = true
 
-   if (isRemoveWhosMe.value) {
-      removeStringWhosMe()
+   if (isRemoveWhoMe.value) {
+      removeStringWhoMe()
    } else {
-      setStringWhosMe(selectedWhosMe, selectedWhosMeIndex)
+      setStringWhoMe(selectedWhoMe, selectedWhoMeIndex)
    }
 }
 
-const removeStringWhosMe = () => {
+const removeStringWhoMe = () => {
    const interval = setInterval(() => {
-      whosMe.value = whosMe.value.slice(0, -1)
-      if (whosMe.value === '') {
-         isRemoveWhosMe.value = false
+      whoMe.value = whoMe.value.slice(0, -1)
+      if (whoMe.value === '') {
+         isRemoveWhoMe.value = false
          clearInterval(interval)
       }
-      if (!isRemoveWhosMe.value) setWhosMe()
+      if (!isRemoveWhoMe.value) setWhoMe()
    }, 50)
 }
 
-const setStringWhosMe = (selectedWhosMe: string, selectedWhosMeIndex: number) => {
+const setStringWhoMe = (selectedWhoMe: string, selectedWhoMeIndex: number) => {
    const interval = setInterval(() => {
-      whosMe.value = whosMe.value + selectedWhosMe[selectedWhosMeIndex]
-      selectedWhosMeIndex++
-      if (selectedWhosMeIndex >= selectedWhosMe.length) {
+      whoMe.value = whoMe.value + selectedWhoMe[selectedWhoMeIndex]
+      selectedWhoMeIndex++
+      if (selectedWhoMeIndex >= selectedWhoMe.length) {
          clearInterval(interval)
          setTimeout(() => {
-            whosMeIndex.value++
-            if (whosMeIndex.value >= whosMeList.length) whosMeIndex.value = 0
-            setWhosMe()
+            whoMeIndex.value++
+            if (whoMeIndex.value >= whoMeList.length) whoMeIndex.value = 0
+            setWhoMe()
          }, 3000)
       }
-   }, 100)
+   }, 60)
 }
 
-setWhosMe()
+setWhoMe()
 </script>
 
 <template>
@@ -85,7 +82,10 @@ setWhosMe()
          <div class="profile-box">
             <p>Hi, I'am</p>
             <p>Yukie Muhammad Billal</p>
-            <p><span class="text-change">{{ whosMe }}</span><span class="animate-blink">|</span></p>
+            <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
+            <p class="social-media-wrapper">
+               <a href=""><Icon name="ion:logo-github" class="social-icon" /></a>
+            </p>
          </div>
       </div>
       <div class="image-profile-wrapper">
