@@ -134,16 +134,19 @@ a {
   color: #6bc9fc;
   text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
 }
-.profile-box p.social-media-wrapper {
-  display: flex;
-  align-items: center;
+.profile-box .social-media-wrapper {
+  display: inline-block;
   margin-top: 6px;
 }
-.profile-box p.social-media-wrapper .social-icon {
+.profile-box .social-media-wrapper a {
+  display: inline-block;
+  margin-right: 6px;
+}
+.profile-box .social-media-wrapper a .social-icon {
   transition: al 0.1s ease-in-out;
   color: white;
 }
-.profile-box p.social-media-wrapper .social-icon:hover {
+.profile-box .social-media-wrapper a .social-icon:hover {
   transform: scale(1.12);
 }
 

@@ -12,6 +12,24 @@ useSeoMeta({
 import 'assets/css/main.css'
 import 'assets/css/portofolio/portofolio.css'
 
+interface linkInterface {
+   name: string,
+   link: string,
+   iconName: string
+}
+
+const socials = ref<linkInterface[]>([
+   {
+      name: 'github',
+      link: 'https://github.com/Yukie-Billal',
+      iconName: 'ion:logo-github'
+   },
+   {
+      name: 'Instagram',
+      link: 'https://www.instagram.com/yukie_m_billal/',
+      iconName: 'ion:logo-instagram'
+   }
+])
 
 const whoMe = ref<string>('')
 const whoMeIndex = ref<number>(0)
@@ -83,9 +101,9 @@ setWhoMe()
             <p>Hi, I'am</p>
             <p>Yukie Muhammad Billal</p>
             <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
-            <p class="social-media-wrapper">
-               <a href=""><Icon name="ion:logo-github" class="social-icon" /></a>
-            </p>
+            <div class="social-media-wrapper" v-for="social in socials">
+               <a :href="social.link" :title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
+            </div>
          </div>
       </div>
       <div class="image-profile-wrapper">
