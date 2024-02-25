@@ -14,6 +14,59 @@ import 'assets/css/keyframes.css'
 import 'assets/css/portofolio/portofolio.css'
 // import 'assets/css/portofolio/portofolio-1024.css'
 // import 'assets/css/portofolio/portofolio-1280.css'
+
+
+const whosMe = ref<string>('')
+const whosMeIndex = ref<number>(0)
+const isRemoveWhosMe = ref<boolean>(false)
+const whosMeList: string[] = [
+    "Junior web developer",
+    "Junior api developer",
+    "Backend developer",
+    "Frontend developer",
+    "Fullstack developer",
+]
+
+const setWhosMe = () => {
+   const selectedWhosMe: string = whosMeList[whosMeIndex.value]
+   let selectedWhosMeIndex: number = 0
+
+   if (whosMeList.includes(whosMe.value)) isRemoveWhosMe.value = true
+
+   if (isRemoveWhosMe.value) {
+      removeStringWhosMe()
+   } else {
+      setStringWhosMe(selectedWhosMe, selectedWhosMeIndex)
+   }
+}
+
+const removeStringWhosMe = () => {
+   const interval = setInterval(() => {
+      whosMe.value = whosMe.value.slice(0, -1)
+      if (whosMe.value === '') {
+         isRemoveWhosMe.value = false
+         clearInterval(interval)
+      }
+      if (!isRemoveWhosMe.value) setWhosMe()
+   }, 50)
+}
+
+const setStringWhosMe = (selectedWhosMe: string, selectedWhosMeIndex: number) => {
+   const interval = setInterval(() => {
+      whosMe.value = whosMe.value + selectedWhosMe[selectedWhosMeIndex]
+      selectedWhosMeIndex++
+      if (selectedWhosMeIndex >= selectedWhosMe.length) {
+         clearInterval(interval)
+         setTimeout(() => {
+            whosMeIndex.value++
+            if (whosMeIndex.value >= whosMeList.length) whosMeIndex.value = 0
+            setWhosMe()
+         }, 3000)
+      }
+   }, 100)
+}
+
+setWhosMe()
 </script>
 
 <template>
@@ -32,7 +85,7 @@ import 'assets/css/portofolio/portofolio.css'
          <div class="profile-box">
             <p>Hi, I'am</p>
             <p>Yukie Muhammad Billal</p>
-            <p>Junior fullstack web development</p>
+            <p><span class="text-change">{{ whosMe }}</span><span class="animate-blink">|</span></p>
          </div>
       </div>
       <div class="image-profile-wrapper">
