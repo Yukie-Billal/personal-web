@@ -2,11 +2,6 @@
 @use "../_sass/keyframes"
 @use "../_sass/_utils/animation"
 
-body
-  background-image: url("../../main-background.png")
-  background-repeat: no-repeat
-  background-size: cover
-
 a
   color: white
 
@@ -14,9 +9,12 @@ a
   .bg-primary-#{$i}0
     background-color: nth(colors.$primary-opacity, $i)
 
-.content-wrapper
-  width: 100vw
-  height: 100vh
+.content-wrapper#home-page
+  background-image: url("../../main-background.png")
+  background-repeat: no-repeat
+  background-size: cover
+  width: 100dvw
+  height: 100dvh
   display: flex
   justify-content: center
   align-items: center
@@ -26,7 +24,26 @@ a
   font-weight: 500
   letter-spacing: .25px
   padding: 10px 140px
+  transition: transform 1.4s ease-in-out
 
+  &.not-active
+    transform: translateY(-100%)
+
+.navigation-container
+  position: fixed
+  top: 0
+  left: 0
+  width: fit-content
+  height: 100dvh
+  display: flex
+  justify-content: center
+  align-items: center
+  font-size: 36px
+  font-family: sans-serif
+  color: colors.$primary
+  font-weight: 500
+  letter-spacing: .25px
+  padding: 10px 140px
 
 .profile-wrapper
   display: flex

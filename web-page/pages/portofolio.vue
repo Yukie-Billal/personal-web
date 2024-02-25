@@ -15,22 +15,28 @@ import 'assets/css/portofolio/portofolio.css'
 interface linkInterface {
    name: string,
    link: string,
-   iconName: string
+   iconName: string,
 }
 
 const socials = ref<linkInterface[]>([
    {
       name: 'github',
       link: 'https://github.com/Yukie-Billal',
-      iconName: 'ion:logo-github'
+      iconName: 'ion:logo-github',
    },
    {
       name: 'Instagram',
       link: 'https://www.instagram.com/yukie_m_billal/',
-      iconName: 'ion:logo-instagram'
+      iconName: 'ion:logo-instagram',
+   },
+   {
+      name: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/yukie-muhammad-billal-b3bb59271/',
+      iconName: 'ion:logo-linkedin',
    }
 ])
 
+// text changer
 const whoMe = ref<string>('')
 const whoMeIndex = ref<number>(0)
 const isRemoveWhoMe = ref<boolean>(false)
@@ -80,12 +86,18 @@ const setStringWhoMe = (selectedWhoMe: string, selectedWhoMeIndex: number) => {
       }
    }, 60)
 }
+// end text changer
+
+// event handler
+const wheelHandle = (e: WheelEvent) => {
+   console.log(e.deltaY, e)
+}
 
 setWhoMe()
 </script>
 
 <template>
-   <div class="content-wrapper">
+   <div class="navigation-container">
       <div class="navigation-wrapper">
          <ul class="wrapper">
             <li class="navigation-item">
@@ -96,13 +108,15 @@ setWhoMe()
             </li>
          </ul>
       </div>
+   </div>
+   <div :class="`content-wrapper`" @wheel="wheelHandle" id="home-page">
       <div class="profile-wrapper">
          <div class="profile-box">
             <p>Hi, I'am</p>
             <p>Yukie Muhammad Billal</p>
             <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
             <div class="social-media-wrapper" v-for="social in socials">
-               <a :href="social.link" :title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
+               <a :href="social.link" target="_blank" :title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
             </div>
          </div>
       </div>
@@ -110,4 +124,7 @@ setWhoMe()
          <img src="/tet-chibi.png" alt="Ini gambar" />
       </div>
    </div>
+<!--   <div class="content-wrapper" id="career-page">-->
+<!--      Karir hidup saya-->
+<!--   </div>-->
 </template>
