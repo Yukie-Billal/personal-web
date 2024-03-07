@@ -9,25 +9,78 @@ a
   .bg-primary-#{$i}0
     background-color: nth(colors.$primary-opacity, $i)
 
-.content-wrapper#home-page
+/* width */
+::-webkit-scrollbar
+  position: absolute
+  width: 6px
+
+
+/* Track */
+::-webkit-scrollbar-track
+  background: nth(colors.$primary-opacity, 1)
+
+
+/* Handle */
+::-webkit-scrollbar-thumb
+  background: nth(colors.$smooth-green-opacity, 7)
+  border-radius: 5px
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+  background: #555
+
+[data-title]:hover:after
+  opacity: 1
+  transition: all 0.1s ease 0.5s
+  visibility: visible
+
+[data-title]:after
+  content: attr(data-title)
+  background-color: colors.$smooth-green
+  color: #111
+  font-size: 14px
+  position: absolute
+  padding: 1px 5px 2px 5px
+  bottom: -1.6em
+  left: 100%
+  white-space: nowrap
+  box-shadow: 1px 1px 3px #222222
+  opacity: 0
+  border: 0.5px solid #111111FF
+  z-index: 99999
+  visibility: hidden
+  border-radius: 4px
+
+[data-title]
+  position: relative
+
+
+.content-wrapper
   background-image: url("../../main-background.png")
   background-repeat: no-repeat
-  background-size: cover
+  background-size: 105%
+  overflow-x: hidden
+  scroll-behavior: smooth
   width: 100dvw
   height: 100dvh
-  display: flex
-  justify-content: center
-  align-items: center
-  font-size: 36px
-  font-family: sans-serif
-  color: colors.$primary
-  font-weight: 500
-  letter-spacing: .25px
-  padding: 10px 140px
-  transition: transform 1.4s ease-in-out
 
-  &.not-active
-    transform: translateY(-100%)
+  & .id-section
+    width: 100dvw
+    height: 100dvh
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 36px
+    font-family: sans-serif
+    color: colors.$primary
+    font-weight: 500
+    letter-spacing: .25px
+    padding: 10px 140px
+    transition: transform 1.4s ease-in-out
+
+    &.not-active
+      transform: translateY(-100%)
 
 .navigation-container
   position: fixed
@@ -78,7 +131,7 @@ a
       font-weight: 900
       letter-spacing: calc(56px / 100 * 0.5)
       text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
-      color: #52ff75
+      color: colors.$smooth-green
       margin-bottom: .3em
 
       &::selection

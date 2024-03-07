@@ -4,7 +4,7 @@ useSeoMeta({
    ogTitle: 'Yukie muhammad billal personal website',
    description: 'My personal website, documentations, project, story, blog. all in one',
    ogDescription: 'Yukie personal web, feel free to explore. Learn something by doing, My story life in 1 place.',
-   ogImage: 'https://yukie.site/yukie.jpg',
+   ogImage: 'https://yukie.site/tet-chibi.png',
    ogImageAlt: 'Yukie muhammad billal',
    twitterCard: 'summary_large_image'
 })
@@ -109,22 +109,24 @@ setWhoMe()
          </ul>
       </div>
    </div>
-   <div :class="`content-wrapper`" @wheel="wheelHandle" id="home-page">
-      <div class="profile-wrapper">
-         <div class="profile-box">
-            <p>Hi, I'am</p>
-            <p>Yukie Muhammad Billal</p>
-            <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
-            <div class="social-media-wrapper" v-for="social in socials">
-               <a :href="social.link" target="_blank" :title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
+   <div class="content-wrapper" @wheel="wheelHandle" >
+      <div class="id-section" id="home-page">
+         <div class="profile-wrapper">
+            <div class="profile-box">
+               <p>Hi, I'am</p>
+               <p>Yukie Muhammad Billal</p>
+               <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
+               <div class="social-media-wrapper" v-for="social in socials">
+                  <a :href="social.link" target="_blank" :data-title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
+               </div>
             </div>
          </div>
+         <div class="image-profile-wrapper">
+            <img src="/tet-chibi.png" alt="Ini gambar" />
+         </div>
       </div>
-      <div class="image-profile-wrapper">
-         <img src="/tet-chibi.png" alt="Ini gambar" />
+      <div class="id-section">
+         KASIUN
       </div>
    </div>
-<!--   <div class="content-wrapper" id="career-page">-->
-<!--      Karir hidup saya-->
-<!--   </div>-->
 </template>

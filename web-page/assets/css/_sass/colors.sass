@@ -2,5 +2,9 @@
 $primary: rgb(0, 102, 255)
 $primary-opacity: ()
 
+$smooth-green: #52ff75
+$smooth-green-opacity: ()
+
 @for $i from 1 through 9
     $primary-opacity: append($primary-opacity, rgba($primary, $i * 0.1))
+    $smooth-green-opacity: append($smooth-green-opacity, rgba($smooth-green, $i * 0.1))
