@@ -94,6 +94,15 @@ const wheelHandle = (e: WheelEvent) => {
 }
 
 setWhoMe()
+
+const borderRadiusMeStyle = ref<string>('10px 10px 10px 10px')
+
+const randomizeBorderRadiusStyle = (): void => {
+   const random = () => Math.floor(Math.random() * 500)
+   borderRadiusMeStyle.value = `${random()}px ${random()}px ${random()}px ${random()}px`
+}
+
+setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
 </script>
 
 <template>
@@ -125,8 +134,15 @@ setWhoMe()
             <img src="/tet-chibi.png" alt="Ini gambar" />
          </div>
       </div>
-      <div class="id-section">
-         KASIUN
+      <div class="id-section" id="about-page">
+         <div class="wrapper">
+            <div class="me-image-wrapper" :style="{borderRadius: borderRadiusMeStyle}">
+               <img src="/tet-chibi.png" alt="">
+            </div>
+            <div class="about-wrapper">
+               <h3 class="text-white">About</h3>
+            </div>
+         </div>
       </div>
    </div>
 </template>
