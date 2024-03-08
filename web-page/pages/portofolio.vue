@@ -95,14 +95,19 @@ const wheelHandle = (e: WheelEvent) => {
 
 setWhoMe()
 
+
 const borderRadiusMeStyle = ref<string>('10px 10px 10px 10px')
-
 const randomizeBorderRadiusStyle = (): void => {
-   const random = () => Math.floor(Math.random() * 500)
-   borderRadiusMeStyle.value = `${random()}px ${random()}px ${random()}px ${random()}px`
+   const random = (count: number=50) => Math.floor(Math.random() * (count - 20 + 1)) + 30
+   borderRadiusMeStyle.value = `${random()}% ${random()}% ${random()}% ${random()}%`
 }
-
+randomizeBorderRadiusStyle()
 setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
+
+const router = useRouter()
+const handleMenuClick = () => {
+   router.push('#about-page')
+}
 </script>
 
 <template>
@@ -112,7 +117,7 @@ setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
             <li class="navigation-item">
                <Icon name="bxs:home" />
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item" @click="handleMenuClick">
                <Icon name="bxs:user" />
             </li>
          </ul>
