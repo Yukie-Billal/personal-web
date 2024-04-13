@@ -210,6 +210,9 @@ a {
   font-family: "Inter", "Quicksand", sans-serif;
   font-size: 1.2em;
 }
+.profile-box p:nth-child(1)::-moz-selection {
+  color: deepskyblue;
+}
 .profile-box p:nth-child(1)::selection {
   color: deepskyblue;
 }
@@ -222,6 +225,10 @@ a {
   color: #52ff75;
   margin-bottom: 0.3em;
 }
+.profile-box p:nth-child(2)::-moz-selection {
+  color: #2288fc;
+  text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
+}
 .profile-box p:nth-child(2)::selection {
   color: #2288fc;
   text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
@@ -232,6 +239,10 @@ a {
   font-size: 0.8em;
   font-weight: 500;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+}
+.profile-box p:nth-child(3) *::-moz-selection {
+  color: #6bc9fc;
+  text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
 }
 .profile-box p:nth-child(3) *::selection {
   color: #6bc9fc;
@@ -251,6 +262,9 @@ a {
 }
 .profile-box .social-media-wrapper a .social-icon:hover {
   transform: scale(1.12);
+}
+.profile-box .social-media-wrapper a .social-icon:active {
+  color: rgba(82, 255, 117, 0.8);
 }
 
 .image-profile-wrapper {
@@ -306,6 +320,4 @@ a {
 }
 #about-page .wrapper .about-wrapper {
   padding: 10px 10px 10px 10px;
-}
-
-/*# sourceMappingURL=portofolio.css.map */
+}/*# sourceMappingURL=portofolio.css.map */

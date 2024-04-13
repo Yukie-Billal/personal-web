@@ -42,7 +42,7 @@ const whoMeIndex = ref<number>(0)
 const isRemoveWhoMe = ref<boolean>(false)
 const whoMeList: string[] = [
     "Junior web developer",
-    "Junior api developer",
+    "Junior API developer",
     "Backend developer",
     "Frontend developer",
     "Fullstack developer",
