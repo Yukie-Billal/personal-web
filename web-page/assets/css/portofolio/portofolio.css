@@ -120,10 +120,12 @@ a {
   background-size: 105%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   width: 100dvw;
   height: 100dvh;
 }
 .content-wrapper .id-section {
+  scroll-snap-align: start;
   width: 100dvw;
   height: 100dvh;
   display: flex;
