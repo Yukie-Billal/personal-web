@@ -98,33 +98,33 @@ a
   font-weight: 500
   letter-spacing: .25px
 
-.navigation-wrapper
-  position: absolute
-  left: 44px
-  padding: 4px
+  & .navigation-wrapper
+    position: absolute
+    left: 44px
+    padding: 4px
 
-  border-radius: 250px
-  background: white
-  height: auto
-  min-width: 1.4em
+    border-radius: 250px
+    background: white
+    height: auto
+    min-width: 1.4em
 
-  box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
 
-  & .wrapper
-    text-align: center
-    padding: 2px 0
+    & .wrapper
+      text-align: center
+      padding: 2px 0
 
-    & .navigation-item
-      list-style: none
-      font-size: 22px
-      padding: 4px 0
-      margin: 6px 0
-      border-radius: 10px
+      & .navigation-item
+        list-style: none
+        font-size: 22px
+        padding: 4px 0
+        margin: 6px 0
+        border-radius: 10px
 
-      &:hover
-        background: colors.$primary
-        background: radial-gradient(circle, colors.$primary 40%, rgba(255, 255, 255, 1) 100%)
-        color: white
+        &:hover
+          background: colors.$primary
+          background: radial-gradient(circle, colors.$primary 40%, rgba(255, 255, 255, 1) 100%)
+          color: white
 
 .profile-wrapper
   display: flex
@@ -218,7 +218,6 @@ a
       width: 300px
 
 
-
 #about-page
   & .wrapper
     width: 100%
@@ -232,7 +231,7 @@ a
       justify-content: center
       align-items: center
       transition: all 1s ease-in-out
-      background: radial-gradient(colors.$primary, colors.$primary, nth(colors.$primary-opacity, 8), nth(colors.$primary-opacity, 7), nth(colors.$primary-opacity, 6), nth(colors.$primary-opacity, 4), rgba(colors.$primary, 0))
+      background: radial-gradient(colors.$smooth-green, colors.$smooth-green, nth(colors.$smooth-green-opacity, 8), nth(colors.$smooth-green-opacity, 7), nth(colors.$smooth-green-opacity, 6), nth(colors.$smooth-green-opacity, 4), rgba(colors.$smooth-green, 0)), radial-gradient(nth(colors.$primary-opacity, 4), nth(colors.$primary-opacity, 4))
       padding: 60px 0
 
       & img
