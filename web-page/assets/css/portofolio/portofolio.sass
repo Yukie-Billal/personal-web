@@ -1,3 +1,4 @@
+@use "../_sass/fonts"
 @use "../_sass/colors"
 @use "../_sass/keyframes"
 @use "../_sass/_utils/animation"
@@ -13,7 +14,7 @@ a
 /* width */
 ::-webkit-scrollbar
   position: absolute
-  width: 6px
+  width: 0px
 
 
 /* Track */
@@ -232,6 +233,7 @@ a
     padding:  0 0 0 20px
 
     & .me-image-wrapper
+      width: 24%
       display: flex
       justify-content: center
       align-items: center
@@ -243,4 +245,33 @@ a
         width: 70%
 
     & .about-wrapper
-      padding: 10px 10px 10px 10px
+      width: 76%
+      padding: 10px 10px 10px 26px
+      font-family: fonts.$font
+
+      h3
+        font-size: 44px
+        margin: 0 0 8px 0
+
+      h5 
+        font-size: 22px
+        margin: 0 0 20px 0px
+
+      p
+        width: 90%
+        font-size: 19px
+        margin: 8px 0
+        line-height: 134%
+        margin: 2px 0 18px 0
+      
+      ul
+        list-style: none
+
+        li
+          margin: 26px 0
+          font-size: 18px
+          width: 50%
+
+          span
+            color: colors.$smooth-green
+          
