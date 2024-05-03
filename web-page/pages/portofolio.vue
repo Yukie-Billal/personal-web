@@ -157,5 +157,21 @@ const handleMenuClick = () => {
             </div>
          </div>
       </div>
+      <div class="id-section" id="skill-page">
+         <div class="wrapper">
+            <div class="item">
+               <Icon name="devicon:css3" class="icon-skill" />
+               <span>CSS3</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:html5" class="icon-skill" />
+               <span>HTML5</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:sass" class="icon-skill" />
+               <span>SASS</span>
+            </div>
+         </div>
+      </div>
    </div>
 </template>

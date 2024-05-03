@@ -9,6 +9,14 @@
     transform: translateY(5px) rotate(0.5deg);
   }
 }
+@keyframes fly-no-transform {
+  0% {
+    top: -1px;
+  }
+  100% {
+    top: 4px;
+  }
+}
 @keyframes blink {
   0%, 70% {
     opacity: 1;
@@ -357,4 +365,50 @@ a {
 }
 #about-page .wrapper .about-wrapper ul li span {
   color: #52ff75;
+}
+
+#skill-page .wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#skill-page .wrapper .item {
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+#skill-page .wrapper .item .icon-skill {
+  font-size: 80px;
+}
+#skill-page .wrapper .item span {
+  position: absolute;
+  opacity: 0;
+  bottom: 0%;
+  left: 20%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  font-size: 18px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+#skill-page .wrapper .item:hover span {
+  opacity: 1;
+  bottom: -30%;
+}
+#skill-page .wrapper .item:nth-child(1) {
+  transform: translate(170px, 50px);
+  transition: all 1s ease;
+  animation: fly-no-transform 1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(2) {
+  transform: translate(40px, 160px);
+  transition: all 1s ease;
+  animation: fly-no-transform 1s 0.8s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(3) {
+  transform: translate(5px, 10px);
+  transition: all 1s ease;
+  animation: fly-no-transform 1s 0.2s infinite alternate;
 }/*# sourceMappingURL=portofolio.css.map */

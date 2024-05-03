@@ -280,3 +280,51 @@ a
           span
             color: colors.$smooth-green
           
+
+#skill-page
+  & .wrapper
+    width: 100%
+    height: 100%
+    position: relative
+
+    & .item
+      position: absolute
+      width: max-content
+      height: max-content
+
+      & .icon-skill
+        font-size: 80px
+
+      & span
+        position: absolute
+        opacity: 0
+        bottom: 0%
+        left: 20%
+        transition: all .3s ease-in-out
+        z-index: -1
+        font-size: 18px
+        color: white
+        text-shadow: 1px 1px 3px black
+
+      &:hover
+        & span
+          opacity: 1
+          bottom: -30%
+
+      &:nth-child(1)
+        transform: translate(170px, 50px)
+        transition: all 1s ease
+        animation: fly-no-transform 1s infinite alternate
+
+      &:nth-child(2)
+        transform: translate(40px, 160px)
+        transition: all 1s ease
+        animation: fly-no-transform 1s .8s infinite alternate
+
+      &:nth-child(3)
+        transform: translate(5px, 10px)
+        transition: all 1s ease
+        animation: fly-no-transform 1s .2s infinite alternate
+        
+
+        
