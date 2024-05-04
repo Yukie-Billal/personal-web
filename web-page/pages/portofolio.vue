@@ -171,6 +171,18 @@ const handleMenuClick = () => {
                <Icon name="devicon:sass" class="icon-skill" />
                <span>SASS</span>
             </div>
+            <div class="item">
+               <Icon name="devicon:javascript" class="icon-skill" />
+               <span>Javascript</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:php" class="icon-skill" />
+               <span>PHP</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:pytohn" class="icon-skill" />
+               <span>Python</span>
+            </div>
          </div>
       </div>
    </div>

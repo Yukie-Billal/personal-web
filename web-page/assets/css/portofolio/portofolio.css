@@ -133,6 +133,14 @@ a {
   width: 100dvw;
   height: 100dvh;
 }
+@media (max-width: 970px) {
+  .content-wrapper {
+    background-size: auto;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .content-wrapper .id-section {
   scroll-snap-align: start;
   width: 100dvw;
