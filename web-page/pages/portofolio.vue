@@ -87,12 +87,6 @@ const setStringWhoMe = (selectedWhoMe: string, selectedWhoMeIndex: number) => {
    }, 60)
 }
 // end text changer
-
-// event handler
-const wheelHandle = (e: WheelEvent) => {
-   console.log(e.deltaY, e)
-}
-
 setWhoMe()
 
 
@@ -123,7 +117,7 @@ const handleMenuClick = () => {
          </ul>
       </div>
    </div>
-   <div class="content-wrapper" @wheel="wheelHandle" >
+   <div class="content-wrapper">
       <div class="id-section" id="home-page">
          <div class="profile-wrapper">
             <div class="profile-box">

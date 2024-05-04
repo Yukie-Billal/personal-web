@@ -3,6 +3,7 @@
 @use "../_sass/keyframes"
 @use "../_sass/_utils/animation"
 @use "../_sass/_utils/text"
+@use "../_sass/_var/screens"
 
 a
   color: white
@@ -88,6 +89,9 @@ a
     padding: 10px 140px
     transition: transform 1.4s ease-in-out
 
+    @media (max-width: screens.$large-mobile)
+      padding: 8px 20px
+
     &.not-active
       transform: translateY(-100%)
 
@@ -106,6 +110,9 @@ a
   font-weight: 500
   letter-spacing: .25px
 
+  @media (max-width: screens.$large-mobile)
+    font-size: 24px  
+
   & .navigation-wrapper
     position: absolute
     left: 44px
@@ -118,6 +125,12 @@ a
 
     box-shadow: 8px 8px 2px rgba(0, 0, 0, .3)
 
+    @media (max-width: screens.$large-mobile) 
+      bottom: 20px
+      left: 10px
+      border-radius: 120px
+      min-width: 1.4em
+
     & .wrapper
       text-align: center
       padding: 2px 0
@@ -128,6 +141,9 @@ a
         padding: 4px 0
         margin: 6px 0
         border-radius: 10px
+
+        @media (max-width: screens.$large-mobile) 
+          font-size: 18px
 
         &:hover
           background: colors.$primary
@@ -149,6 +165,9 @@ a
   font-weight: 700
   padding-left: 48px
 
+  @media (max-width: screens.$large-mobile)
+    padding-left: 26px
+
   & p
     margin: 0
     padding: 0
@@ -157,6 +176,9 @@ a
     &:nth-child(1)
       font-family: 'Inter', 'Quicksand', sans-serif
       font-size: 1.2em
+
+      @media (max-width: screens.$large-mobile)
+        font-size: 0.6em
 
       &::selection
         color: deepskyblue
@@ -169,6 +191,9 @@ a
       text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
       color: colors.$smooth-green
       margin-bottom: .3em
+
+      @media (max-width: screens.$large-mobile)
+        font-size: 0.8em
 
       &::selection
         color: #2288fc
@@ -197,6 +222,9 @@ a
       & .social-icon
         transition: al .1s ease-in-out
         color: white
+
+        @media (max-width: screens.$large-mobile)
+          font-size: 26px
 
         &:hover
           transform: scale(1.12)
@@ -249,21 +277,33 @@ a
       & img
         width: 70%
 
+      @media (max-width: screens.$small-desktop)
+        display: none
+
     & .about-wrapper
       width: 76%
       padding: 10px 10px 10px 26px
       font-family: fonts.$font
 
+      @media (max-width: screens.$small-desktop)
+        width: 100%
+
       h3
-        font-size: 44px
+        font-size: 1.2em
         margin: 0 0 8px 0
         text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
+
+        @media (max-width: screens.$small-desktop)
+          font-size: 0.8em
 
       h5 
         font-size: 22px
         margin: 0 0 20px 0px
         color: colors.$smooth-green
         text-shadow: 2px 2px 8px rgba(0, 0, 0, .35)
+
+        @media (max-width: screens.$small-desktop)
+          font-size: 0.4em
 
       p
         width: 90%
@@ -273,6 +313,9 @@ a
         margin: 2px 0 18px 0
         text-shadow: 1px 1px 4px rgba(0, 0, 0, .25)
       
+        @media (max-width: screens.$small-desktop)
+          font-size: 0.4em
+
       ul
         list-style: none
 
@@ -281,6 +324,9 @@ a
           margin: 26px 0
           font-size: 18px
           width: 50%
+
+          @media (max-width: screens.$small-desktop)
+            font-size: 0.42em
 
           span
             color: colors.$smooth-green
