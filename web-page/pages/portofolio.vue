@@ -241,7 +241,7 @@ const handleMenuClick = () => {
                <Icon name="devicon:typescript" class="icon-skill" />
                <span>Typescript</span>
             </div>
-            <h1 class="title">Language & Tools</h1>
+            <h1 class="title text-xl">Language & Tools</h1>
          </div>
       </div>
    </div>
