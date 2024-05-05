@@ -9,7 +9,7 @@
     transform: translateY(5px) rotate(0.5deg);
   }
 }
-@keyframes fly-no-transform {
+@keyframes fly-skill-icon {
   0% {
     top: -1px;
   }
@@ -23,6 +23,14 @@
   }
   90% {
     opacity: 0;
+  }
+}
+@keyframes ease-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .animate-blink {
@@ -297,6 +305,11 @@ a {
   font-weight: 500;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 900px) {
+  .profile-box p:nth-child(3) {
+    font-size: 0.5em;
+  }
+}
 .profile-box p:nth-child(3) *::-moz-selection {
   color: #6bc9fc;
   text-shadow: 1px 1px 1px rgba(66, 245, 18, 0.75);
@@ -452,6 +465,18 @@ a {
   width: 100%;
   height: 100%;
   position: relative;
+  animation: ease-in 2s;
+}
+#skill-page .wrapper h1.title {
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10;
+  animation: ease-in;
+  color: white;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.3);
 }
 #skill-page .wrapper .item {
   position: absolute;
@@ -479,17 +504,112 @@ a {
   bottom: -30%;
 }
 #skill-page .wrapper .item:nth-child(1) {
-  transform: translate(170px, 50px);
+  transform: translate(210px, 150px);
   transition: all 1s ease;
-  animation: fly-no-transform 1s infinite alternate;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
 }
 #skill-page .wrapper .item:nth-child(2) {
-  transform: translate(40px, 160px);
+  transform: translate(80px, 260px);
   transition: all 1s ease;
-  animation: fly-no-transform 1s 0.8s infinite alternate;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
 }
 #skill-page .wrapper .item:nth-child(3) {
-  transform: translate(5px, 10px);
+  transform: translate(45px, 110px);
   transition: all 1s ease;
-  animation: fly-no-transform 1s 0.2s infinite alternate;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(4) {
+  transform: translate(150px, 700px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(5) {
+  transform: translate(250px, 600px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(6) {
+  transform: translate(290px, 730px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(7) {
+  transform: translate(480px, 280px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(8) {
+  transform: translate(640px, 200px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(9) {
+  transform: translate(640px, 580px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(10) {
+  transform: translate(770px, 480px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(11) {
+  transform: translate(840px, 600px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(12) {
+  transform: translate(740px, 740px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(13) {
+  transform: translate(580px, 780px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(14) {
+  transform: translate(870px, 770px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(15) {
+  transform: translate(970px, 210px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(16) {
+  transform: translate(1100px, 310px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(17) {
+  transform: translate(1170px, 680px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(18) {
+  transform: translate(1400px, 620px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(19) {
+  transform: translate(1270px, 540px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(20) {
+  transform: translate(1300px, 720px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(21) {
+  transform: translate(1380px, 120px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
+}
+#skill-page .wrapper .item:nth-child(22) {
+  transform: translate(1540px, 190px);
+  transition: all 1s ease;
+  animation: fly-skill-icon 1s 0.1s infinite alternate;
 }/*# sourceMappingURL=portofolio.css.map */

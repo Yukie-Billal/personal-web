@@ -174,9 +174,74 @@ const handleMenuClick = () => {
                <span>PHP</span>
             </div>
             <div class="item">
-               <Icon name="devicon:pytohn" class="icon-skill" />
+               <Icon name="devicon:python" class="icon-skill" />
                <span>Python</span>
             </div>
+            <div class="item">
+               <Icon name="devicon:nodejs" class="icon-skill" />
+               <span>Nodejs</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:bun" class="icon-skill" />
+               <span>Bun</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:flask" class="icon-skill" />
+               <span>Flask</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:express" class="icon-skill" />
+               <span>Express</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:laravel" class="icon-skill" />
+               <span>Laravel</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:vuejs" class="icon-skill" />
+               <span>Vuejs</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:react" class="icon-skill" />
+               <span>React</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:nuxtjs" class="icon-skill" />
+               <span>Nuxtjs</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:tailwindcss" class="icon-skill" />
+               <span>Tailwind css</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:bootstrap" class="icon-skill" />
+               <span>Bootstrap</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:git" class="icon-skill" />
+               <span>Git</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:postman" class="icon-skill" />
+               <span>Postman</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:vscode" class="icon-skill" />
+               <span>Visual studio code</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:github" class="icon-skill" />
+               <span>Github</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:mysql" class="icon-skill" />
+               <span>Mysql</span>
+            </div>
+            <div class="item">
+               <Icon name="devicon:typescript" class="icon-skill" />
+               <span>Typescript</span>
+            </div>
+            <h1 class="title">Language & Tools</h1>
          </div>
       </div>
    </div>
