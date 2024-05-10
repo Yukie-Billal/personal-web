@@ -151,97 +151,28 @@ const handleMenuClick = () => {
             </div>
          </div>
       </div>
-      <div class="id-section" id="skill-page">
+      <div id="skill-page" class="id-section">
          <div class="wrapper">
-            <div class="item">
-               <Icon name="devicon:css3" class="icon-skill" />
-               <span>CSS3</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:html5" class="icon-skill" />
-               <span>HTML5</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:sass" class="icon-skill" />
-               <span>SASS</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:javascript" class="icon-skill" />
-               <span>Javascript</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:php" class="icon-skill" />
-               <span>PHP</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:python" class="icon-skill" />
-               <span>Python</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:nodejs" class="icon-skill" />
-               <span>Nodejs</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:bun" class="icon-skill" />
-               <span>Bun</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:flask" class="icon-skill" />
-               <span>Flask</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:express" class="icon-skill" />
-               <span>Express</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:laravel" class="icon-skill" />
-               <span>Laravel</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:vuejs" class="icon-skill" />
-               <span>Vuejs</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:react" class="icon-skill" />
-               <span>React</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:nuxtjs" class="icon-skill" />
-               <span>Nuxtjs</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:tailwindcss" class="icon-skill" />
-               <span>Tailwind css</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:bootstrap" class="icon-skill" />
-               <span>Bootstrap</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:git" class="icon-skill" />
-               <span>Git</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:postman" class="icon-skill" />
-               <span>Postman</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:vscode" class="icon-skill" />
-               <span>Visual studio code</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:github" class="icon-skill" />
-               <span>Github</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:mysql" class="icon-skill" />
-               <span>Mysql</span>
-            </div>
-            <div class="item">
-               <Icon name="devicon:typescript" class="icon-skill" />
-               <span>Typescript</span>
-            </div>
-            <h1 class="title text-xl">Language & Tools</h1>
+            <img src="https://skillicons.dev/icons?i=css,html,sass,javascript,typescript,php,python,tailwindcss,bootstrap,vue,react,nuxt,nodejs,bun,express,laravel,flask,mysql,mongodb,vscode,postman,git,figma,bash,docker&theme=dark&perline=10" alt="">
+            <!-- <img src="https://skillicons.dev/icons?i=css&theme=dark&width=60&height=60" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=sass&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=javascript&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=php&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=python&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=vue&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=nuxt&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=express&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=bun&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=laravel&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=flask&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=vscode&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=postman&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=bash&theme=dark" alt="" class="icon-skill">
+            <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
          </div>
       </div>
    </div>
