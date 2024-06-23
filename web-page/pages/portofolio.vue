@@ -87,7 +87,7 @@ const setStringWhoMe = (selectedWhoMe: string, selectedWhoMeIndex: number) => {
    }, 60)
 }
 // end text changer
-setWhoMe()
+
 
 
 const borderRadiusMeStyle = ref<string>('10px 10px 10px 10px')
@@ -95,13 +95,17 @@ const randomizeBorderRadiusStyle = (): void => {
    const random = (count: number=50) => Math.floor(Math.random() * (count - 20 + 1)) + 30
    borderRadiusMeStyle.value = `${random()}% ${random()}% ${random()}% ${random()}%`
 }
-randomizeBorderRadiusStyle()
-setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
 
 const router = useRouter()
 const handleMenuClick = () => {
    router.push('#about-page')
 }
+
+onNuxtReady(() => {
+   setWhoMe()
+   randomizeBorderRadiusStyle()
+   setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
+})
 </script>
 
 <template>
@@ -143,10 +147,10 @@ const handleMenuClick = () => {
                <h5>Developer | 1 Tahun pengalaman</h5>
                <p>Saya seorang developer dengan 1 tahun pengalaman dalam software development, terbiasa dalam melakukan troubleshoot dalam permasalahan di dalam project, saya sudah terbiasa menggunakan berbagai bahasa pemrograman dan tools untuk membuat sebuah aplikasi berbasis website, REST API ataupun desktop.</p>
                <ul class="detailed">
-                  <li><Icon name='ion:ios-arrow-right' /> Tanggal lahir : <span>03 Agustus 2004</span></li>
                   <li><Icon name='ion:ios-arrow-right' /> Email : <span>yukiembillal01@gmail.com</span></li>
                   <li><Icon name='ion:ios-arrow-right' /> Nomer telepon : <span>+62 81214454694</span></li>
                   <li><Icon name='ion:ios-arrow-right' /> Tempat tinggal : <span>Cimahi, Jawa barat, Indonesia <Icon name="flag:id-4x3" /></span></li>
+                  <li><Icon name='ion:ios-arrow-right' /> Usia : <span>20</span></li>
                </ul>
             </div>
          </div>
@@ -173,6 +177,12 @@ const handleMenuClick = () => {
             <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="" class="icon-skill">
             <img src="https://skillicons.dev/icons?i=bash&theme=dark" alt="" class="icon-skill">
             <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
+         </div>
+      </div>
+      <div id="contact">
+         <div class="wrapper">
+            <input type="text" name="email">
+            <input type="text" name="subject">
          </div>
       </div>
    </div>
