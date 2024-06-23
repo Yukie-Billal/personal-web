@@ -41,11 +41,11 @@ const whoMe = ref<string>('')
 const whoMeIndex = ref<number>(0)
 const isRemoveWhoMe = ref<boolean>(false)
 const whoMeList: string[] = [
-    "Junior web developer",
-    "Junior API developer",
-    "Backend developer",
-    "Frontend developer",
-    "Fullstack developer",
+   "Junior web developer",
+   "Junior API developer",
+   "Backend developer",
+   "Frontend developer",
+   "Fullstack developer",
 ]
 
 const setWhoMe = () => {
@@ -92,7 +92,7 @@ const setStringWhoMe = (selectedWhoMe: string, selectedWhoMeIndex: number) => {
 
 const borderRadiusMeStyle = ref<string>('10px 10px 10px 10px')
 const randomizeBorderRadiusStyle = (): void => {
-   const random = (count: number=50) => Math.floor(Math.random() * (count - 20 + 1)) + 30
+   const random = (count: number = 50) => Math.floor(Math.random() * (count - 20 + 1)) + 30
    borderRadiusMeStyle.value = `${random()}% ${random()}% ${random()}% ${random()}%`
 }
 
@@ -104,7 +104,7 @@ const handleMenuClick = () => {
 onNuxtReady(() => {
    setWhoMe()
    randomizeBorderRadiusStyle()
-   setInterval(() => {randomizeBorderRadiusStyle()}, 1000)
+   setInterval(() => { randomizeBorderRadiusStyle() }, 1000)
 })
 </script>
 
@@ -129,7 +129,9 @@ onNuxtReady(() => {
                <p>Yukie Muhammad Billal</p>
                <p><span class="text-change">{{ whoMe }}</span><span class="animate-blink">|</span></p>
                <div class="social-media-wrapper" v-for="social in socials">
-                  <a :href="social.link" target="_blank" :data-title="social.name"><Icon :name="social.iconName" class="social-icon" /></a>
+                  <a :href="social.link" target="_blank" :data-title="social.name">
+                     <Icon :name="social.iconName" class="social-icon" />
+                  </a>
                </div>
             </div>
          </div>
@@ -139,25 +141,39 @@ onNuxtReady(() => {
       </div>
       <div class="id-section" id="about-page">
          <div class="wrapper">
-            <div class="me-image-wrapper" :style="{borderRadius: borderRadiusMeStyle}">
+            <div class="me-image-wrapper" :style="{ borderRadius: borderRadiusMeStyle }">
                <img src="/tet-chibi.png" alt="">
             </div>
             <div class="about-wrapper text-white">
                <h3>Yukie muhammad billal</h3>
                <h5>Developer | 1 Tahun pengalaman</h5>
-               <p>Saya seorang developer dengan 1 tahun pengalaman dalam software development, terbiasa dalam melakukan troubleshoot dalam permasalahan di dalam project, saya sudah terbiasa menggunakan berbagai bahasa pemrograman dan tools untuk membuat sebuah aplikasi berbasis website, REST API ataupun desktop.</p>
+               <p>Saya seorang developer dengan 1 tahun pengalaman dalam software development, terbiasa dalam melakukan
+                  troubleshoot dalam permasalahan di dalam project, saya sudah terbiasa menggunakan berbagai bahasa
+                  pemrograman dan tools untuk membuat sebuah aplikasi berbasis website, REST API ataupun desktop.</p>
                <ul class="detailed">
-                  <li><Icon name='ion:ios-arrow-right' /> Email : <span>yukiembillal01@gmail.com</span></li>
-                  <li><Icon name='ion:ios-arrow-right' /> Nomer telepon : <span>+62 81214454694</span></li>
-                  <li><Icon name='ion:ios-arrow-right' /> Tempat tinggal : <span>Cimahi, Jawa barat, Indonesia <Icon name="flag:id-4x3" /></span></li>
-                  <li><Icon name='ion:ios-arrow-right' /> Usia : <span>20</span></li>
+                  <li>
+                     <Icon name='ion:ios-arrow-right' /> Email : <span>yukiembillal01@gmail.com</span>
+                  </li>
+                  <li>
+                     <Icon name='ion:ios-arrow-right' /> Nomer telepon : <span>+62 81214454694</span>
+                  </li>
+                  <li>
+                     <Icon name='ion:ios-arrow-right' /> Tempat tinggal : <span>Cimahi, Jawa barat, Indonesia
+                        <Icon name="flag:id-4x3" />
+                     </span>
+                  </li>
+                  <li>
+                     <Icon name='ion:ios-arrow-right' /> Usia : <span>20</span>
+                  </li>
                </ul>
             </div>
          </div>
       </div>
       <div id="skill-page" class="id-section">
          <div class="wrapper">
-            <img src="https://skillicons.dev/icons?i=css,html,sass,javascript,typescript,php,python,tailwindcss,bootstrap,vue,react,nuxt,nodejs,bun,express,laravel,flask,mysql,mongodb,vscode,postman,git,figma,bash,docker&theme=dark&perline=10" alt="">
+            <img
+               src="https://skillicons.dev/icons?i=css,html,sass,javascript,typescript,php,python,tailwindcss,bootstrap,vue,react,nuxt,nodejs,bun,express,laravel,flask,mysql,mongodb,vscode,postman,git,figma,bash,docker&theme=dark&perline=10"
+               alt="">
             <!-- <img src="https://skillicons.dev/icons?i=css&theme=dark&width=60&height=60" alt="" class="icon-skill">
             <img src="https://skillicons.dev/icons?i=sass&theme=dark" alt="" class="icon-skill">
             <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="" class="icon-skill">
@@ -179,10 +195,9 @@ onNuxtReady(() => {
             <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
          </div>
       </div>
-      <div id="contact">
+      <div id="contact" class="id-section">
          <div class="wrapper">
-            <input type="text" name="email">
-            <input type="text" name="subject">
+            <h2 class="text-default">Coming soon</h2>
          </div>
       </div>
    </div>
