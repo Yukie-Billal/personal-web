@@ -146,7 +146,7 @@ onNuxtReady(() => {
             </div>
             <div class="about-wrapper text-white">
                <h3>Yukie muhammad billal</h3>
-               <h5>Developer | 1 Tahun pengalaman</h5>
+               <h5>Web Developer | Backend Developer</h5>
                <p>Saya seorang developer dengan 1 tahun pengalaman dalam software development, terbiasa dalam melakukan
                   troubleshoot dalam permasalahan di dalam project, saya sudah terbiasa menggunakan berbagai bahasa
                   pemrograman dan tools untuk membuat sebuah aplikasi berbasis website, REST API ataupun desktop.</p>
@@ -195,7 +195,7 @@ onNuxtReady(() => {
             <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
          </div>
       </div>
-      <div id="contact" class="id-section">
+      <div id="projects" class="id-section">
          <div class="wrapper">
             <h2 class="text-default">Coming soon</h2>
          </div>
