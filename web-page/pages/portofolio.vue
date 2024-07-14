@@ -195,6 +195,13 @@ onNuxtReady(() => {
             <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
          </div>
       </div>
+      <!-- <div id="contact" class="id-section">
+         <div class="wrapper">
+            <form action="">
+               <input type="text" placeholder="Email" />
+            </form>
+         </div>
+      </div> -->
       <div id="projects" class="id-section">
          <div class="wrapper">
             <h2 class="text-default">Coming soon</h2>

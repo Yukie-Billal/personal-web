@@ -479,6 +479,26 @@ a {
   gap: 10px;
 }
 
+#contact .wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 11em;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .text-default {
   color: #52ff75;
+  font-size: 58px;
+}
+@media (max-width: 1366px) {
+  .text-default {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  .text-default {
+    font-size: 38px;
+  }
 }/*# sourceMappingURL=portofolio.css.map */
