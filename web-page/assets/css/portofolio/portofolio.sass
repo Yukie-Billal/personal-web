@@ -223,7 +223,7 @@ a
       margin-right: 6px
 
       & .social-icon
-        transition: al .1s ease-in-out
+        transition: all .1s ease-in-out
         color: white
 
         @media (max-width: screens.$large-mobile)
@@ -343,6 +343,15 @@ a
     display: flex
     justify-content: center
     gap: 10px
+
+    & .icon-image-wrap
+      width: 50%
+      display: grid
+      justify-items: center
+      align-content: center
+      grid-template-columns: repeat(7, 1fr)
+      column-gap: 4px
+      row-gap: 5px
 
     // & img
     //   width: 60px

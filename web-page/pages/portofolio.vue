@@ -47,6 +47,13 @@ const whoMeList: string[] = [
    "Frontend developer",
    "Fullstack developer",
 ]
+const skillIcons: string[] = [
+   "css", "html", "sass", "tailwindcss", "bootstrap",
+   "javascript", "typescript", "php", "python", 
+   "vue", "react", "nuxt", "nodejs", "bun", "express", "laravel", "flask", 
+   "mysql", "mongodb", "redis",
+   "vscode", "postman", "git", "github", "githubactions", "figma", "bash", "docker",
+]
 
 const setWhoMe = () => {
    const selectedWhoMe: string = whoMeList[whoMeIndex.value]
@@ -171,28 +178,9 @@ onNuxtReady(() => {
       </div>
       <div id="skill-page" class="id-section">
          <div class="wrapper">
-            <img
-               src="https://skillicons.dev/icons?i=css,html,sass,javascript,typescript,php,python,tailwindcss,bootstrap,vue,react,nuxt,nodejs,bun,express,laravel,flask,mysql,mongodb,vscode,postman,git,figma,bash,docker&theme=dark&perline=10"
-               alt="">
-            <!-- <img src="https://skillicons.dev/icons?i=css&theme=dark&width=60&height=60" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=sass&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=javascript&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=php&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=python&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=vue&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=react&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=nuxt&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=express&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=bun&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=laravel&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=flask&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=vscode&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=postman&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=bash&theme=dark" alt="" class="icon-skill">
-            <img src="https://skillicons.dev/icons?i=docker&theme=dark" alt="" class="icon-skill"> -->
+            <div class="icon-image-wrap">
+               <img v-for="icon in skillIcons" :key="icon" :src="`https://skillicons.dev/icons?i=${icon}&theme=dark`" alt="" width="54" height="54" >
+            </div>
          </div>
       </div>
       <!-- <div id="contact" class="id-section">
