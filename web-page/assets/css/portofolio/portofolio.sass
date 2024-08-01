@@ -231,6 +231,7 @@ a
 
         &:hover
           transform: scale(1.12)
+          color: rgba(colors.$smooth-green, .8)
 
         &:active
           color: rgba(colors.$smooth-green, .8)
@@ -352,6 +353,12 @@ a
       grid-template-columns: repeat(7, 1fr)
       column-gap: 4px
       row-gap: 5px
+
+      & .skill-icon
+        transition: all .1s ease-in-out
+
+        &:hover
+          transform: scale(1.12)
 
     // & img
     //   width: 60px

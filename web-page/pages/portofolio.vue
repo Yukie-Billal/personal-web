@@ -179,7 +179,7 @@ onNuxtReady(() => {
       <div id="skill-page" class="id-section">
          <div class="wrapper">
             <div class="icon-image-wrap">
-               <img v-for="icon in skillIcons" :key="icon" :src="`https://skillicons.dev/icons?i=${icon}&theme=dark`" alt="" width="54" height="54" >
+               <img v-for="icon in skillIcons" :key="icon" :src="`https://skillicons.dev/icons?i=${icon}&theme=dark`" alt="" width="54" height="54" class="skill-icon" :title="icon" >
             </div>
          </div>
       </div>

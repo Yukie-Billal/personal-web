@@ -337,6 +337,7 @@ a {
 }
 .profile-box .social-media-wrapper a .social-icon:hover {
   transform: scale(1.12);
+  color: rgba(82, 255, 117, 0.8);
 }
 .profile-box .social-media-wrapper a .social-icon:active {
   color: rgba(82, 255, 117, 0.8);
@@ -478,6 +479,12 @@ a {
   -moz-column-gap: 4px;
        column-gap: 4px;
   row-gap: 5px;
+}
+#skill-page .wrapper .icon-image-wrap .skill-icon {
+  transition: all 0.1s ease-in-out;
+}
+#skill-page .wrapper .icon-image-wrap .skill-icon:hover {
+  transform: scale(1.12);
 }
 
 #projects .wrapper {
