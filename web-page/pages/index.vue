@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-   title: 'My Amazing poersonal website',
+   title: 'Personal website | Yukie Muhammad Billal',
    description: 'My personal website, documentations, project, story, blog. all in one',
    ogTitle: 'Yukie muhammad billal personal website',
    ogDescription: 'Yukie personal web, feel free to explore. Learn something by doing, My story life in 1 place.',
